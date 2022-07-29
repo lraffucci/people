@@ -1,0 +1,15 @@
+<form *ngIf="personForm" [formGroup]="personForm" (ngSubmit)="addPerson()">
+  <div class="field is-grouped">
+    <p class="control is-expanded">
+      <input class="input" type="text" formControlName="firstName" placeholder="First Name" aria-label="First Name">
+    </p>
+    <p class="control is-expanded">
+      <input class="input" type="text" formControlName="lastName" placeholder="Last Name" aria-label="Last Name">
+    </p>
+    <p class="control">
+      <button class="button is-info" aria-label="Add" type="submit">
+        Add
+      </button>
+    </p>
+  </div>
+</form>

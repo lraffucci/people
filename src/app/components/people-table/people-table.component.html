@@ -1,0 +1,23 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th><abbr title="First">First</abbr></th>
+      <th><abbr title="Last">Last</abbr></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th><abbr title="First">First</abbr></th>
+      <th><abbr title="Last">Last</abbr></th>
+      <th></th>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr *ngFor="let person of people">
+      <td>{{person.firstName}}</td>
+      <td>{{person.lastName}}</td>
+      <td><button (click)="removePerson(person)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
